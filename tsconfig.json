@@ -1,0 +1,37 @@
+{
+  "_comment": "http://www.typescriptlang.org/docs/handbook/compiler-options.html",
+  "compilerOptions": {
+    // "outDir": "./assetstest/",
+    "sourceMap": true,
+    // 以严格模式解析
+    "strict": true,
+    "strictNullChecks": true,
+    // 采用的模块系统
+    "module": "esnext",
+    // 如何处理模块
+    "moduleResolution": "node",
+    // 编译输出目标 ES 版本
+    "target": "es5",
+    // 启用装饰器
+    "experimentalDecorators": true,
+    // 启用设计类型元数据（用于反射）
+    "emitDecoratorMetadata": true,
+    // 在表达式和声明上有隐含的any类型时报错
+    "noImplicitAny": false,
+    // 不是函数的所有返回路径都有返回值时报错。
+    "noImplicitReturns": true,
+    // 移除注释
+    "removeComments": true,
+    // 允许编译javascript文件
+    "allowJs": true,
+    // 允许从没有设置默认导出的模块中默认导入
+    "allowSyntheticDefaultImports": true,
+    // 解析非相对模块名的基准目录
+    "baseUrl": "./src",
+    "lib": ["es5", "es2015", "es2016", "es2017", "dom"],
+    "jsx": "preserve",
+    "jsxFactory": "h"
+  },
+  "include": ["src/**/*"],
+  "exclude": ["node_modules", "**/*.spec.ts"]
+}

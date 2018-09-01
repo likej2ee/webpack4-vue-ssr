@@ -1,0 +1,45 @@
+{
+  "_comment": "See https://github.com/buzinas/tslint-eslint-rules for more details",
+  "extends": ["tslint-eslint-rules"],
+  "rules": {
+    "whitespace": [
+      false,
+      "check-branch",
+      "check-decl",
+      "check-module",
+      "check-separator",
+      "check-type",
+      "check-type-operator",
+      "check-preblock"
+    ],
+    "linebreak-style": [true, "LF"],
+    "no-unexpected-multiline": true,
+    "no-console": [false],
+    "no-conditional-assignment": true,
+    "semicolon": [false, "never"],
+    "trailing-comma": [
+      false,
+      {
+        "multiline": {
+          "objects": "always",
+          "arrays": "always",
+          "functions": "never",
+          "typeLiterals": "ignore"
+        },
+        "singleline": "never",
+        "esSpecCompliant": true
+      }
+    ],
+    "ter-indent": [
+      false,
+      2,
+      {
+        "FunctionExpression": {
+          "parameters": 1,
+          "body": 1
+        }
+      }
+    ],
+    "quotemark": [false, "single", "avoid-escape", "avoid-template"]
+  }
+}

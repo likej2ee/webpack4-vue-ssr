@@ -1,0 +1,58 @@
+{
+  "name": "webpack4-demo",
+  "version": "1.0.0",
+  "description": "webpack4 typescript vue2 element-ui demo",
+  "private": true,
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "cross-env NODE_ENV=production webpack --config build/webpack.dll.js && cross-env NODE_ENV=production webpack --config build/webpack.config.prod.js",
+    "buildtest": "cross-env NODE_ENV=test webpack --config build/webpack.dll.js && cross-env NODE_ENV=test webpack --config build/webpack.config.prod.js",
+    "dll": "cross-env NODE_ENV=development webpack --config build/webpack.dll.js",
+    "start": "cross-env NODE_ENV=development node dev-server"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "prettier": {
+    "printWidth": 120,
+    "singleQuote": true,
+    "semi": false,
+    "trailingComma": "es5"
+  },
+  "devDependencies": {
+    "autoprefixer": "^9.1.2",
+    "clean-webpack-plugin": "^0.1.19",
+    "colors": "^1.3.2",
+    "copy-webpack-plugin": "^4.5.2",
+    "cross-env": "^5.2.0",
+    "css-loader": "^1.0.0",
+    "file-loader": "^1.1.11",
+    "html-webpack-plugin": "^3.2.0",
+    "image-webpack-loader": "^4.3.1",
+    "mini-css-extract-plugin": "^0.4.1",
+    "node-sass": "^4.9.3",
+    "optimize-css-assets-webpack-plugin": "^5.0.0",
+    "postcss-loader": "^3.0.0",
+    "sass-loader": "^7.1.0",
+    "style-loader": "^0.22.0",
+    "uglifyjs-webpack-plugin": "^1.3.0",
+    "url-loader": "^1.0.1",
+    "vue-loader": "^15.4.1",
+    "vue-style-loader": "^4.1.2",
+    "vue-template-compiler": "^2.5.17",
+    "webpack": "^4.16.3",
+    "webpack-cli": "^3.1.0",
+    "webpack-dev-server": "^3.1.5",
+    "webpack-manifest-plugin": "^2.0.3",
+    "webpack-merge": "^4.1.4",
+    "webpack-plugin-hash-output": "^3.1.0"
+  },
+  "dependencies": {
+    "express": "^4.16.3",
+    "lodash": "^4.17.10",
+    "vue": "^2.5.17",
+    "vue-router": "^3.0.1",
+    "vue-server-renderer": "^2.5.17",
+    "vuex": "^3.0.1"
+  }
+}
